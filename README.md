@@ -13,7 +13,7 @@ Explique o **enredo ou contexto** onde essa API se aplica. Por exemplo:
 
 ## 👥 Integrantes da Dupla
 
-- Nome Completo do Aluno 1 - [BiaGuedes2005](https://github.com/BiaGuedes2005)
+- Maria Beatriz Fossa Guedes - [BiaGuedes2005](https://github.com/BiaGuedes2005)
 - Pedro Henrique Pelegri dos Santos - [PPelegrii](https://github.com/PPelegrii)
 
 ---
