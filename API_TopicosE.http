@@ -1,0 +1,6 @@
+@API_TopicosE_HostAddress = http://localhost:5274
+
+GET {{API_TopicosE_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
