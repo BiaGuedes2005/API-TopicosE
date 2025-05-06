@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "scpi0nhQyao=",
+  "dgSpecHash": "vnHfJwAl4nc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\PEDROHENRIQUEPELEGRI\\Desktop\\API-TopicosE\\API_TopicosE.csproj",
+  "projectFilePath": "C:\\Users\\PEDROHENRIQUEPELEGRI\\Desktop\\APITopicosE\\API_TopicosE.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PEDROHENRIQUEPELEGRI\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\PEDROHENRIQUEPELEGRI\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.13\\microsoft.aspnetcore.openapi.8.0.13.nupkg.sha512",

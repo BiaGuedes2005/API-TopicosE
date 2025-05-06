@@ -3040,11 +3040,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PEDROHENRIQUEPELEGRI\\Desktop\\API-TopicosE\\API_TopicosE.csproj",
+      "projectUniqueName": "C:\\Users\\PEDROHENRIQUEPELEGRI\\Desktop\\APITopicosE\\API_TopicosE.csproj",
       "projectName": "API_TopicosE",
-      "projectPath": "C:\\Users\\PEDROHENRIQUEPELEGRI\\Desktop\\API-TopicosE\\API_TopicosE.csproj",
+      "projectPath": "C:\\Users\\PEDROHENRIQUEPELEGRI\\Desktop\\APITopicosE\\API_TopicosE.csproj",
       "packagesPath": "C:\\Users\\PEDROHENRIQUEPELEGRI\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PEDROHENRIQUEPELEGRI\\Desktop\\API-TopicosE\\obj\\",
+      "outputPath": "C:\\Users\\PEDROHENRIQUEPELEGRI\\Desktop\\APITopicosE\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PEDROHENRIQUEPELEGRI\\AppData\\Roaming\\NuGet\\NuGet.Config"
