@@ -11,7 +11,6 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite("Data Source=produtos.db"));
 
-var app = builder.Build();
 
 // Configurando o CORS
 builder.Services.AddCors(options =>
@@ -24,6 +23,7 @@ builder.Services.AddCors(options =>
     });
 });
 
+var app = builder.Build();
 app.UseCors();
 
 // Configure the HTTP request pipeline.
