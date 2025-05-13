@@ -1,5 +1,5 @@
 const lista = document.getElementById('lista-produtos');
-const apiUrl = 'https://localhost:5001';
+const apiUrl = 'https://localhost:5001/produtos';
 
 const buscarProdutos = async () => {
     try {
@@ -19,7 +19,7 @@ const buscarProdutos = async () => {
         produtos.forEach(produto => {
 
             const newLi = document.createElement('li');
-            newLi.innerHTML = `<strong>Nome:</strong> ${produto.nome} | <strong>Preço:</strong> ${pokemon.preco}`;
+            newLi.innerHTML = `<strong>Nome:</strong> ${produto.nome} | <strong>Preço:</strong> ${produto.preco}`;
             lista.appendChild(newLi);
         });
 
