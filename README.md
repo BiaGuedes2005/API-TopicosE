@@ -1,13 +1,8 @@
-# 📚 Nome do Projeto
-
-> *Substitua este título pelo nome do seu projeto.*
+# 📚 MusicHub
 
 ## 🧾 Descrição
 
-Descreva aqui de forma clara e objetiva o **propósito da aplicação**.  
-Explique o **enredo ou contexto** onde essa API se aplica. Por exemplo:
-
-> "Esta API simula o controle de estoque e pedidos de um pequeno supermercado local. Permite cadastrar produtos, fornecedores e registrar pedidos de compra."
+Essa API simula uma aplicação de música em forma de hub, como o Spotify ou o YT Music. Permite ouvir, pesquisar, adicionar ou remover músicas. 
 
 ---
 
@@ -41,10 +36,10 @@ Explique o **enredo ou contexto** onde essa API se aplica. Por exemplo:
 
 ```bash
 # 1. Clone o repositório
-git clone https://github.com/usuario/repositorio
+git clone https://github.com/BiaGuedes2005/APITopicosE
 
 # 2. Acesse a pasta do projeto
-cd nome-da-pasta
+cd APITopicosE
 
 # 3. Restaure os pacotes
 dotnet restore

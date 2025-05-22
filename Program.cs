@@ -6,10 +6,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-
 // Configurando o EF Core com SQLite
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlite("Data Source=produtos.db"));
+    options.UseSqlite("Data Source=musicas.db"));
 
 
 // Configurando o CORS
@@ -35,53 +34,55 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-// GET: lista todos os produtos
-app.MapGet("/produtos", (AppDbContext db) =>
+// GET: lista todos as musicas
+app.MapGet("/musicas", (AppDbContext db) =>
 {
-    var listaProdutos = db.TabelaProdutos.ToList();
-    return Results.Ok(listaProdutos);
+    var listaMusicas = db.TabelaMusicas.ToList();
+    return Results.Ok(listaMusicas);
 });
 
-// GET: pega o produto pelo ID
-app.MapGet("/produtos/{id}", async(int id, AppDbContext db) =>
+// GET: pega a musica pelo ID
+app.MapGet("/musicas/{id}", async(int id, AppDbContext db) =>
 {
-    var produto = await db.TabelaProdutos.FindAsync(id);
-    return produto is not null ? Results.Ok(produto) : Results.NotFound("Produto não encontrado!");
+    var musica = await db.TabelaMusicas.FindAsync(id);
+    return musica is not null ? Results.Ok(musica) : Results.NotFound("Musica não encontrada!");
 
 });
 
-// POST: adiciona um novo produto
-app.MapPost("/produtos", async(AppDbContext db, Produto produto) =>
+// POST: adiciona uma nova musica
+app.MapPost("/musicas", async(AppDbContext db, Musica musica) =>
 {
-    db.TabelaProdutos.Add(produto);
+    db.TabelaMusicas.Add(musica);
     await db.SaveChangesAsync();
-    return Results.Created($"produtos/{produto.Id}", produto);
+    return Results.Created($"musicas/{musica.Id}", musica);
 });
 
-// PUT: atualiza um produto existente
-app.MapPut("/produtos/{id}", async(int id, AppDbContext db, Produto updatedProduto) =>
+// PUT: atualiza uma musica existente
+app.MapPut("/musicas/{id}", async(int id, AppDbContext db, Musica updatedMusica) =>
 {
-    var produtoAtual = await db.TabelaProdutos.FindAsync(id);
-    if(produtoAtual == null){
-        return Results.NotFound("Produto não encontrado!");
+    var musicaAtual = await db.TabelaMusicas.FindAsync(id);
+    if(musicaAtual == null){
+        return Results.NotFound("Música não encontrada!");
     }
-    produtoAtual.Nome = updatedProduto.Nome;
-    produtoAtual.Preco = updatedProduto.Preco;
+    musicaAtual.Nome = updatedMusica.Nome;
+    musicaAtual.Artista = updatedMusica.Artista;
+    musicaAtual.Album = updatedMusica.Album;
+    musicaAtual.Duracao = updatedMusica.Duracao;
     await db.SaveChangesAsync();
 
-    return Results.Ok(produtoAtual);
+    return Results.Ok(musicaAtual);
 });
-// DELETE: remove um produto
-app.MapDelete("/produtos/{id}", async(int id, AppDbContext db) =>
+// DELETE: remove uma musica
+app.MapDelete("/musicas/{id}", async(int id, AppDbContext db) =>
 {
-    var produto = await db.TabelaProdutos.FindAsync(id);
-    if(produto == null){
-        return Results.NotFound("Produto não encontrado!");
+    var musica = await db.TabelaMusicas.FindAsync(id);
+    if(musica == null){
+        return Results.NotFound("Música não encontrada!");
     }
-    db.TabelaProdutos.Remove(produto);
+    db.TabelaMusicas.Remove(musica);
     await db.SaveChangesAsync();
 
-    return Results.Ok("Produto removido com sucesso!");
+    return Results.Ok("Música removida com sucesso!");
 
 });
 app.Run();

@@ -1,5 +1,5 @@
-const lista = document.getElementById('lista-produtos');
-const apiUrl = 'https://localhost:5001/produtos';
+const lista = document.getElementById('lista-musicas');
+const apiUrl = 'https://localhost:5001/musicas';
 
 const buscarProdutos = async () => {
     try {
@@ -11,15 +11,15 @@ const buscarProdutos = async () => {
         });
 
         if (!response.ok) {
-            throw new Error('Erro ao buscar os produtos');
+            throw new Error('Erro ao buscar as musicas');
         }
 
-        const produtos = await response.json();
+        const musicas = await response.json();
 
-        produtos.forEach(produto => {
+        musicas.forEach(musica => {
 
             const newLi = document.createElement('li');
-            newLi.innerHTML = `<strong>Nome:</strong> ${produto.nome} | <strong>Preço:</strong> ${produto.preco}`;
+            newLi.innerHTML = `<strong>Nome:</strong> ${musica.nome} | <strong>Artista:</strong> ${musica.artista} | <strong>Album:</strong> ${musica.album} | <strong>Duração:</strong> ${musica.duracao}`;
             lista.appendChild(newLi);
         });
 
