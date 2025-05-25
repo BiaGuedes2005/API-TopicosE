@@ -3013,19 +3013,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\PEDROHENRIQUEPELEGRI\\.nuget\\packages\\": {}
+    "C:\\Users\\pedro\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PEDROHENRIQUEPELEGRI\\Desktop\\APITopicosE\\API_TopicosE.csproj",
+      "projectUniqueName": "C:\\Users\\pedro\\APITopicosE\\API_TopicosE.csproj",
       "projectName": "API_TopicosE",
-      "projectPath": "C:\\Users\\PEDROHENRIQUEPELEGRI\\Desktop\\APITopicosE\\API_TopicosE.csproj",
-      "packagesPath": "C:\\Users\\PEDROHENRIQUEPELEGRI\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PEDROHENRIQUEPELEGRI\\Desktop\\APITopicosE\\obj\\",
+      "projectPath": "C:\\Users\\pedro\\APITopicosE\\API_TopicosE.csproj",
+      "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\pedro\\APITopicosE\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\PEDROHENRIQUEPELEGRI\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -3098,7 +3098,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.406/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

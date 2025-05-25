@@ -79,6 +79,58 @@ h1 {
     border-bottom: 2px solid #6e8efb;
 }
 
+form {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+    padding: 1.5rem 1rem 1rem 1rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-end;
+}
+
+form h2 {
+    flex-basis: 100%;
+    margin-bottom: 0.5rem;
+    color: #6e8efb;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="time"] {
+    flex: 1 1 180px;
+    padding: 0.7rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    background: #fafbff;
+    transition: border 0.2s;
+}
+
+form input:focus {
+    border-color: #a777e3;
+    outline: none;
+}
+
+form button {
+    padding: 0.7rem 1.5rem;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+form button:hover {
+    background: linear-gradient(135deg, #5a7be3, #8f5de3);
+}
+
 .albums-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
