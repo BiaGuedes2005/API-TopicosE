@@ -19,184 +19,67 @@
     </header>
     
     <div class="container">
+        <h1 class="main-title">Bem-vindo ao MusicHub</h1>
+        
         <div class="search-bar">
-            <input type="text" placeholder="Buscar músicas, artistas ou álbuns...">
-            <button>Buscar</button>
+            <form action="" method="get" id="form-busca-id">
+                <h2>Buscar Musica por ID</h2>
+                <input type="number" id="input-id-busca" placeholder="ID da Musica" required min="1" max="41">
+                <button type="submit">Buscar</button>
+                
+                <h2>📈 RESULTADO:</h2>
+                <li id="lista-musicas"></li>
+            </form>
         </div>
         
-        <h2 class="section-title">Álbuns em destaque</h2>
+        <h2 class="section-title">Control</h2>
+        <form action="" method="post" id="form-post">
+            <h2>[POST]</h2>
+            <input type="text" id="input-nome-novo" placeholder="Nome" required>
+            <input type="text" id="input-artista-novo" placeholder="Artista" required>
+            <input type="text" id="input-album-novo" placeholder="Album" required>
+            <input type="time" id="input-duracao-novo" placeholder="Duração" required>
+            <button type="submit">Adicionar</button>
+        </form>
+        
+        <form action="" method="post" id="form-put">
+            <h2>[PUT]</h2>
+            <input type="number" id="input-id-update" placeholder="ID da música para atualizar">
+            <input type="text" id="input-nome-update" placeholder="Novo Nome">
+            <input type="text" id="input-artista-update" placeholder="Novo Artista">
+            <input type="text" id="input-album-update" placeholder="Novo Album">
+            <input type="time" id="input-duracao-update" placeholder="Nova Duração">
+            <button type="submit">Atualizar</button>
+        </form>
+        
+        <form action="" method="get" id="form-delete">
+            <h2>[DELETE]</h2>
+            <input type="number" id="input-id-delete" placeholder="ID da música para deletar">
+            <button type="submit">Deletar</button>
+        </form>
+        <!--<h2 class="section-title">Álbuns em destaque</h2>
         <div class="albums-grid">
             <div class="album-card">
-                <img src="https://via.placeholder.com/300" alt="Capa do Álbum" class="album-cover">
+                <img src="" alt="Capa do Álbum" class="album-cover">
                 <div class="album-info">
                     <div class="album-title">Nome do Álbum</div>
                     <div class="album-artist">Artista</div>
                 </div>
             </div>
-            
-            <div class="album-card">
-                <img src="https://via.placeholder.com/300" alt="Capa do Álbum" class="album-cover">
-                <div class="album-info">
-                    <div class="album-title">Nome do Álbum</div>
-                    <div class="album-artist">Artista</div>
-                </div>
-            </div>
-
-            <div class="album-card">
-                <img src="https://via.placeholder.com/300" alt="Capa do Álbum" class="album-cover">
-                <div class="album-info">
-                    <div class="album-title">Nome do Álbum</div>
-                    <div class="album-artist">Artista</div>
-                </div>
-            </div>
-
-            <div class="album-card">
-                <img src="https://via.placeholder.com/300" alt="Capa do Álbum" class="album-cover">
-                <div class="album-info">
-                    <div class="album-title">Nome do Álbum</div>
-                    <div class="album-artist">Artista</div>
-                </div>
-            </div>
-            
-            <div class="album-card">
-                <img src="https://via.placeholder.com/300" alt="Capa do Álbum" class="album-cover">
-                <div class="album-info">
-                    <div class="album-title">Nome do Álbum</div>
-                    <div class="album-artist">Artista</div>
-                </div>
-            </div>
-        </div>
+        </div>-->
         
         <h2 class="section-title">Top Músicas</h2>
         <div class="songs-list">
-            <ul id="lista-musicas"></ul>
-            <div class="song-item">
-                <div class="song-number">1</div>
-                <div class="song-info">
-                    <div class="song-title">Nome da Música</div>
-                    <div class="song-artist">Artista</div>
-                </div>
-                <div class="song-duration">3:45</div>
-                <button class="play-btn">▶</button>
-            </div>
-            
-            <div class="song-item">
-                <div class="song-number">2</div>
-                <div class="song-info">
-                    <div class="song-title">Nome da Música</div>
-                    <div class="song-artist">Artista</div>
-                </div>
-                <div class="song-duration">4:12</div>
-                <button class="play-btn">▶</button>
-            </div>
-            
-            <div class="song-item">
-                <div class="song-number">3</div>
-                <div class="song-info">
-                    <div class="song-title">Nome da Música</div>
-                    <div class="song-artist">Artista</div>
-                </div>
-                <div class="song-duration">3:28</div>
-                <button class="play-btn">▶</button>
-            </div>
-            
-            <div class="song-item">
-                <div class="song-number">4</div>
-                <div class="song-info">
-                    <div class="song-title">Nome da Música</div>
-                    <div class="song-artist">Artista</div>
-                </div>
-                <div class="song-duration">2:56</div>
-                <button class="play-btn">▶</button>
-            </div>
-
-            <div class="song-item">
-                <div class="song-number">4</div>
-                <div class="song-info">
-                    <div class="song-title">Nome da Música</div>
-                    <div class="song-artist">Artista</div>
-                </div>
-                <div class="song-duration">2:56</div>
-                <button class="play-btn">▶</button>
-            </div>
-
-            <div class="song-item">
-                <div class="song-number">4</div>
-                <div class="song-info">
-                    <div class="song-title">Nome da Música</div>
-                    <div class="song-artist">Artista</div>
-                </div>
-                <div class="song-duration">2:56</div>
-                <button class="play-btn">▶</button>
-            </div>
-
-            <div class="song-item">
-                <div class="song-number">4</div>
-                <div class="song-info">
-                    <div class="song-title">Nome da Música</div>
-                    <div class="song-artist">Artista</div>
-                </div>
-                <div class="song-duration">2:56</div>
-                <button class="play-btn">▶</button>
-            </div>
-
-            <div class="song-item">
-                <div class="song-number">4</div>
-                <div class="song-info">
-                    <div class="song-title">Nome da Música</div>
-                    <div class="song-artist">Artista</div>
-                </div>
-                <div class="song-duration">2:56</div>
-                <button class="play-btn">▶</button>
-            </div>
-
-            <div class="song-item">
-                <div class="song-number">4</div>
-                <div class="song-info">
-                    <div class="song-title">Nome da Música</div>
-                    <div class="song-artist">Artista</div>
-                </div>
-                <div class="song-duration">2:56</div>
-                <button class="play-btn">▶</button>
-            </div>
-
-            <div class="song-item">
-                <div class="song-number">4</div>
-                <div class="song-info">
-                    <div class="song-title">Nome da Música</div>
-                    <div class="song-artist">Artista</div>
-                </div>
-                <div class="song-duration">2:56</div>
-                <button class="play-btn">▶</button>
-            </div>
-
-            <div class="song-item">
-                <div class="song-number">4</div>
-                <div class="song-info">
-                    <div class="song-title">Nome da Música</div>
-                    <div class="song-artist">Artista</div>
-                </div>
-                <div class="song-duration">2:56</div>
-                <button class="play-btn">▶</button>
-            </div>
-
-            <div class="song-item">
-                <div class="song-number">5</div>
-                <div class="song-info">
-                    <div class="song-title">Nome da Música</div>
-                    <div class="song-artist">Artista</div>
-                </div>
-                <div class="song-duration">3:33</div>
-                <button class="play-btn">▶</button>
-            </div>
+            <ul id="lista-top-musicas"></ul>
         </div>
-    </div>
+            
     
     <footer>
         <p>&copy; 2023 MusicHub. Todos os direitos reservados.</p>
     </footer>
+</div>
 
-    <script src="front_script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
