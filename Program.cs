@@ -68,6 +68,7 @@ app.MapPut("/musicas/{id}", async(int id, AppDbContext db, Musica updatedMusica)
     musicaAtual.Artista = updatedMusica.Artista;
     musicaAtual.Album = updatedMusica.Album;
     musicaAtual.Duracao = updatedMusica.Duracao;
+    musicaAtual.Url = updatedMusica.Url;
     await db.SaveChangesAsync();
 
     return Results.Ok(musicaAtual);

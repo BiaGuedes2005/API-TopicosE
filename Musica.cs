@@ -10,5 +10,6 @@ namespace API_TopicosE
         public string? Artista { get; set; }
         public string? Album { get; set; }
         public TimeSpan Duracao { get; set; }
+        public string? Url { get; set; }
     }
 }

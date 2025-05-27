@@ -110,6 +110,19 @@ form input[type="time"] {
     background: #fafbff;
     transition: border 0.2s;
 }
+form input[type="url"] {
+    flex: 1 1 220px;
+    padding: 0.7rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    background: #fafbff;
+    transition: border 0.2s;
+}
+form input[type="url"]:focus {
+    border-color: #a777e3;
+    outline: none;
+}
 
 form input:focus {
     border-color: #a777e3;
@@ -183,13 +196,27 @@ form button:hover {
     padding: 1rem;
     border-bottom: 1px solid #eee;
 }
+.song-item iframe {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(110, 142, 251, 0.15);
+    margin-left: 1rem;
+    background: #fafbff;
+    border: none;
+    transition: box-shadow 0.2s;
+}
+
+.song-item iframe:hover {
+    box-shadow: 0 4px 16px rgba(167, 119, 227, 0.18);
+}
 
 .song-item:last-child {
     border-bottom: none;
 }
 
 .song-item:hover {
-    background-color: #f9f9f9;
+    background: #f0f4ff;
+    box-shadow: 0 2px 8px rgba(110,142,251,0.10);
+    transition: background 0.2s, box-shadow 0.2s;
 }
 
 .song-number {

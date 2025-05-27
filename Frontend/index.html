@@ -9,71 +9,57 @@
 <body>
     <header>
         <div class="logo">MusicHub</div>
-        <nav>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Explorar</a></li>
-                <li><a href="#">Biblioteca</a></li>
-            </ul>
-        </nav>
     </header>
     
     <div class="container">
-        <h1 class="main-title">Bem-vindo ao MusicHub</h1>
+        <h1 class="main-title"><i>Bem-vindo ao MusicHub</i></h1>
+        <h1> O lugar onde sua próxima música favorita se encontra!</h1>
         
         <div class="search-bar">
             <form action="" method="get" id="form-busca-id">
                 <h2>Buscar Musica por ID</h2>
-                <input type="number" id="input-id-busca" placeholder="ID da Musica" required min="1" max="41">
+                <input type="number" id="input-id-busca" placeholder="ID da Musica" required min="1">
                 <button type="submit">Buscar</button>
                 
-                <h2>📈 RESULTADO:</h2>
+                <h2>Resultado:</h2>
                 <li id="lista-musicas"></li>
             </form>
         </div>
         
-        <h2 class="section-title">Control</h2>
+        <h2 class="section-title">Painel de controle</h2>
         <form action="" method="post" id="form-post">
-            <h2>[POST]</h2>
+            <h2>Adicionar uma nova música:</h2> <!--[POST]-->
             <input type="text" id="input-nome-novo" placeholder="Nome" required>
             <input type="text" id="input-artista-novo" placeholder="Artista" required>
             <input type="text" id="input-album-novo" placeholder="Album" required>
             <input type="time" id="input-duracao-novo" placeholder="Duração" required>
+            <input type="url" id="input-url-novo" placeholder="URL do áudio">
             <button type="submit">Adicionar</button>
         </form>
         
         <form action="" method="post" id="form-put">
-            <h2>[PUT]</h2>
+            <h2>Atualizar uma música:</h2> <!--[PUT]-->
             <input type="number" id="input-id-update" placeholder="ID da música para atualizar">
             <input type="text" id="input-nome-update" placeholder="Novo Nome">
             <input type="text" id="input-artista-update" placeholder="Novo Artista">
             <input type="text" id="input-album-update" placeholder="Novo Album">
             <input type="time" id="input-duracao-update" placeholder="Nova Duração">
+            <input type="url" id="input-url-update" placeholder="Nova URL do áudio">
             <button type="submit">Atualizar</button>
         </form>
         
         <form action="" method="get" id="form-delete">
-            <h2>[DELETE]</h2>
+            <h2>Deletar uma música da lista:</h2> <!--[DELETE]-->
             <input type="number" id="input-id-delete" placeholder="ID da música para deletar">
             <button type="submit">Deletar</button>
         </form>
-        <!--<h2 class="section-title">Álbuns em destaque</h2>
-        <div class="albums-grid">
-            <div class="album-card">
-                <img src="" alt="Capa do Álbum" class="album-cover">
-                <div class="album-info">
-                    <div class="album-title">Nome do Álbum</div>
-                    <div class="album-artist">Artista</div>
-                </div>
-            </div>
-        </div>-->
-        
-        <h2 class="section-title">Top Músicas</h2>
+
+        <h2 class="section-title">Lista de Músicas</h2>
         <div class="songs-list">
+            <div id="global-embed-container"></div>
             <ul id="lista-top-musicas"></ul>
         </div>
             
-    
     <footer>
         <p>&copy; 2023 MusicHub. Todos os direitos reservados.</p>
     </footer>
