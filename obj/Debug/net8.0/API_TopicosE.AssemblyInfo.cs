@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("API_TopicosE")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+20337294fa33abd68cf59ed088c74a46e9b49928")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e4f221be8a60dfba00d2f3bfee49d8ec6fc43972")]
 [assembly: System.Reflection.AssemblyProductAttribute("API_TopicosE")]
 [assembly: System.Reflection.AssemblyTitleAttribute("API_TopicosE")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
