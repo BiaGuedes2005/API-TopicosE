@@ -3018,11 +3018,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pedro\\APITopicosE\\API_TopicosE.csproj",
+      "projectUniqueName": "C:\\Users\\pedro\\Desktop\\APITopicosE\\API_TopicosE.csproj",
       "projectName": "API_TopicosE",
-      "projectPath": "C:\\Users\\pedro\\APITopicosE\\API_TopicosE.csproj",
+      "projectPath": "C:\\Users\\pedro\\Desktop\\APITopicosE\\API_TopicosE.csproj",
       "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pedro\\APITopicosE\\obj\\",
+      "outputPath": "C:\\Users\\pedro\\Desktop\\APITopicosE\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config"
